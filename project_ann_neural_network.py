@@ -27,13 +27,16 @@ The script will predict and visualize the final variable in the input set.
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 # Sigmoid activation function
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
+
 # Derivative of the sigmoid function
 def sigmoid_derivative(x):
     return x * (1 - x)
+
 
 # Generate training data
 input_data = np.array([[0, 0],
